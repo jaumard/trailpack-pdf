@@ -25,18 +25,18 @@ module.exports = {
   pageProperties: {
     paperSize: (phantom) => {
       return {
-        format: 'A4',
+        format: 'A4'
         /*
          header: {
-         height: "1.5cm",
+         height: '1.5cm',
          contents: phantom.callback(function (pageNum, numPages) {
-         return "<h1>Header <span style='float:right'>" + pageNum + " / " + numPages + "</span></h1>"
+         return '<h1>Header <span style=\'float:right\'>' + pageNum + ' / ' + numPages + '</span></h1>'
          })
          },
          footer: {
-         height: "1.5cm",
+         height: '1.5cm',
          contents: phantom.callback(function (pageNum, numPages) {
-         return "<h1>Footer <span style='float:right'>" + pageNum + " / " + numPages + "</span></h1>"
+         return '<h1>Footer <span style=\'float:right\'>' + pageNum + ' / ' + numPages + '</span></h1>'
          })
          }*/
       }

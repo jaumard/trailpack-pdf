@@ -24,7 +24,7 @@ module.exports = class PdfTrailpack extends Trailpack {
    */
   initialize () {
     return new Promise((resolve, reject) => {
-      phantom.create().then((instance) => {
+      phantom.create(this.app.config.pdf.options).then((instance) => {
         this.phantom = instance
         return resolve(instance)
       }).catch(reject)

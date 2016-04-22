@@ -8,17 +8,50 @@ module.exports = _.defaultsDeep({
     name: require('../package').name + '-test'
   },
   api: {
-    models: { },
-    controllers: { },
-    services: { }
+    models: {},
+    controllers: {
+      DefaultController: class DefaultController {
+        home(req, res) {
+          res.render('index')
+        }
+      }
+    },
+    services: {}
   },
   config: {
     main: {
       packs: [
         smokesignals.Trailpack,
         require('trailpack-core'),
+        require('trailpack-express4'),
+        require('trailpack-router'),
         require('../')
       ]
+    },
+    routes: [
+      {
+        path: '/',
+        handler: 'DefaultController.home',
+        method: 'GET'
+      }
+    ],
+    web: {
+      port: 3000,
+      views: {
+        engines: {
+          html: 'jade'
+        },
+        path: 'test/views'
+      }
+    },
+    pdf: {
+      pageProperties: {
+        paperSize: (phantom) => {
+          return {
+            format: 'A4'
+          }
+        }
+      }
     }
   }
 }, smokesignals.FailsafeConfig)

@@ -8,10 +8,16 @@
 
 
 ## Install
+With yo : 
 
-```sh
-$ npm install --save trailpack-pdf
 ```
+npm install -g yo generator-trails
+yo trails:trailpack trailpack-pdf
+```
+
+With npm (you will have to create config file manually) :
+ 
+`npm install --save trailpack-pdf`
 
 ## Configure
 
@@ -23,6 +29,31 @@ module.exports = {
     require('trailpack-pdf')
   ]
 }
+```
+
+## Usage
+This Trailpack expose a service to generate PDF, you can call it like this under controller/services/policies :
+
+```
+/** 
+ * Generate PDF from a Trails route, or route path
+ * You can override global page settings and properties, these params are optional
+**/
+this.app.services.PdfService.generateFromRoute('/', '/path/to/my/file.pdf', {javascriptEnabled: true}, {pageSize: {format: 'A4'})
+.then(() => {
+  //pdf generated
+})
+.catch(err => this.log.error(err))
+
+/** 
+ * Generate PDF from an URL
+ * You can override global page settings and properties, these params are optional
+**/
+this.app.services.PdfService.generateFromUrl('http://google.fr', '/path/to/my/file.pdf', {javascriptEnabled: true}, {pageSize: {format: 'A4'})
+.then(() => {
+  //pdf generated
+})
+.catch(err => this.log.error(err))
 ```
 
 [npm-image]: https://img.shields.io/npm/v/trailpack-pdf.svg?style=flat-square
