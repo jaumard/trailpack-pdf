@@ -115,7 +115,7 @@ this.app.services.PdfService.generateFromHtml(fn(), path).then(status => {
 ```
 
 ### Generate image instead of PDF
-Use same code as above but change the extention to `.png` or `.jpeg`
+Use same code as above but change the extension to `.png` or `.jpeg`
 
 ## Contributing
 We love contributions! In order to be able to review your code efficiently,
