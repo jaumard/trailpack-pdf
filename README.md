@@ -1,5 +1,6 @@
 # trailpack-pdf
 :package: Trailpack to generate PDF from routes or templates for Trails.js project
+
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
