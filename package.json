@@ -1,7 +1,7 @@
 {
   "name": "trailpack-pdf",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Trailpack to generate PDF from routes or templates for Trails.js project",
   "homepage": "https://github.com/jaumard/trailpack-pdf",
   "author": {
     "name": "jaumard",
@@ -13,6 +13,8 @@
     "trailpack",
     "trails",
     "trailjs",
+    "phantom",
+    "phantomjs",
     "pdf",
     "pdf generator"
   ],

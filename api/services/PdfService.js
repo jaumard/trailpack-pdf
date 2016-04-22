@@ -45,7 +45,7 @@ module.exports = class PdfService extends Service {
       return Promise.all(pSettings).then(() => Promise.all(pProperties)).then(() => {
         return page.open(url).then(status => {
           return page.render(path).then(() => {
-            this.log.info('Page Rendered')
+            page.close()
           })
         })
       })

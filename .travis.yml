@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '4'
+- stable
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/54f8a1e753f859f5ca1a
+    on_start: never
+    on_failure: change
+deploy:
+  provider: npm
+  email: jimmy.aumard@gmail.com
+  api_key:
+    secure: Qd/MfpRARZB/PFNaaPANMprBvFVrbIbXy53xB+BeHmPmtaFNVtUFQWqotu3uiyHQNBEWZEEeBecPZvYLyp0erjsnh3Xom2wkakTM1NizMlHDsS7sldHB8QElfUV7z3onUOWRR4xEWZ7Z1VSyH8xkz0WAsrXQVNR0TA4twuGslpaOJGDt+q3LCs8GtPGSDO3/CRO4nua3qnpCo/tvAPAhpK3B4GfJsdFoHN7MBSRgu6fAigLcezsODmVL+AWQta4TVw7mx4FnnQCCRKnA5eSkfdpcGZRgLLKALFTC/V3HClL2J+enlB7e5CXV0RsCXIwJvKNpC/+dT1JmZg4MIV1ACblrxdqstnC3Xoq53Z9Iwm+AkPghmkBlSuOp/qVr16mKyisF/ORB/ZHBONVZn5+z1JWXjT1cQE4Jq3AksC7/9D0F6iCprR01Ka15v2JJx7L/2+XkaxGbBKfGYPu11XBnJa5rHeoBWA9CL1L0SYC5xmUT4uS4PUg1lPSZDWoE324lmM7490G6M2CwtXF1BToupHBXhZuVxfkjQRE4lh8YETJu9cSbbxOxjFkEX1sL3h50oYe/mi98lB+qonHNdgq5FuhiIJ/NIybYQCfLcFA8A12x9mmkBl0ot5mLZaQlS4A1QLfzhYJ9CWITt6BeHnrzQVw7OWR47ktTBoem8zAZXyo=
+  on:
+    tags: true
+    repo: jaumard/trailpack-pdf
+    node: stable
