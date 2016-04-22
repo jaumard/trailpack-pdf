@@ -1,5 +1,4 @@
-/google.pdf
 /.idea
 node_modules
 coverage
-/local.pdf
+*.pdf

@@ -88,6 +88,7 @@ this.app.services.PdfService.generateFromRoute('/', '/path/to/my/file.pdf', {jav
 })
 .catch(err => this.log.error(err))
 ```
+
 ### From URL
 ```
 /** 
@@ -100,6 +101,17 @@ this.app.services.PdfService.generateFromUrl('http://google.fr', '/path/to/my/fi
 })
 .catch(err => this.log.error(err))
 ```
+
+### From HTML or Template engine (jade, ejs...)
+```
+const path = 'html.pdf'
+const template = 'index.jade'
+const fn = jade.compile(fs.readFileSync(template))
+this.app.services.PdfService.generateFromHtml(fn(), path).then(status => {
+  //pdf generated
+}).catch(err => done(err))
+```
+
 
 ## Contributing
 We love contributions! In order to be able to review your code efficiently,
