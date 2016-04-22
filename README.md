@@ -6,7 +6,9 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
-This Trailpack is based on [phantomjs](http://phantomjs.org) and [phantomjs-node](https://github.com/amir20/phantomjs-node) to generate PDF. 
+This Trailpack is based on [phantomjs](http://phantomjs.org) and [phantomjs-node](https://github.com/amir20/phantomjs-node) to generate PDF.
+
+It can also generate page into image (png, jpeg) instead of PDF. 
 
 ## Install
 With yo : 
@@ -112,6 +114,8 @@ this.app.services.PdfService.generateFromHtml(fn(), path).then(status => {
 }).catch(err => done(err))
 ```
 
+### Generate image instead of PDF
+Use same code as above but change the extention to `.png` or `.jpeg`
 
 ## Contributing
 We love contributions! In order to be able to review your code efficiently,
