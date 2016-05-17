@@ -39,7 +39,7 @@ module.exports = _.defaultsDeep({
       port: 3000,
       views: {
         engines: {
-          html: 'jade'
+          html: 'pug'
         },
         path: 'test/views'
       }

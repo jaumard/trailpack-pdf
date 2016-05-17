@@ -1,7 +1,7 @@
 /* global describe, it */
 const assert = require('assert')
 const fs = require('fs')
-const jade = require('jade')
+const pug = require('pug')
 
 describe('PdfService', () => {
   const tmp = process.cwd() + '/test/tmp/'
@@ -28,7 +28,7 @@ describe('PdfService', () => {
     it('should generate a PDF from HTML', done => {
       const path = tmp + 'html.pdf'
       const template = process.cwd() + '/test/views/index.html'
-      const fn = jade.compile(fs.readFileSync(template))
+      const fn = pug.compile(fs.readFileSync(template))
       global.app.services.PdfService.generateFromHtml(fn(), path).then(status => {
         assert(fs.existsSync(path))
         done()
@@ -56,7 +56,7 @@ describe('PdfService', () => {
     it('should generate a JPEG from HTML', done => {
       const path = tmp + 'html.jpeg'
       const template = process.cwd() + '/test/views/index.html'
-      const fn = jade.compile(fs.readFileSync(template))
+      const fn = pug.compile(fs.readFileSync(template))
       global.app.services.PdfService.generateFromHtml(fn(), path).then(status => {
         assert(fs.existsSync(path))
         done()

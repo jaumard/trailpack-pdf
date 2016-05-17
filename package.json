@@ -1,6 +1,6 @@
 {
   "name": "trailpack-pdf",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Trailpack to generate PDF/IMAGE from routes or templates for Trails.js project",
   "homepage": "https://github.com/jaumard/trailpack-pdf",
   "author": {
@@ -22,21 +22,21 @@
     "pdf generator"
   ],
   "dependencies": {
-    "phantom": "^2.0.10",
-    "trailpack": "^1.0.0-beta-5",
-    "lodash": "^4.11.1",
+    "lodash": "^4.12.0",
+    "phantom": "^2.1.1",
+    "trailpack": "^1.0.2",
     "trails-service": "^1.0.0-beta-2"
   },
   "devDependencies": {
-    "eslint": "^2.8.0",
-    "eslint-config-trails": "^1.0.4",
-    "jade": "^1.11.0",
+    "eslint": "^2.10.2",
+    "eslint-config-trails": "^1.0.6",
     "mocha": "^2.4.5",
-    "smokesignals": "^1.0.7",
+    "pug": "^2.0.0-alpha7",
+    "smokesignals": "^1.2.2",
     "trailpack-core": "^1.0.0-beta-6",
     "trailpack-express4": "^1.0.0-beta-2",
-    "trailpack-router": "^1.0.0-beta-4",
-    "trails": "^1.0.0-beta-8"
+    "trailpack-router": "^1.0.2",
+    "trails": "^1.0.0"
   },
   "scripts": {
     "test": "eslint . && mocha"
