@@ -5,6 +5,8 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
+[![Beerpay](https://beerpay.io/jaumard/trailpack-pdf/badge.svg?style=flat)](https://beerpay.io/jaumard/trailpack-pdf)
+[![Beerpay](https://beerpay.io/jaumard/trailpack-pdf/make-wish.svg)](https://beerpay.io/jaumard/trailpack-pdf)
 
 This Trailpack is based on [phantomjs](http://phantomjs.org) and [phantomjs-node](https://github.com/amir20/phantomjs-node) to generate PDF.
 
