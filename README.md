@@ -136,3 +136,8 @@ please keep the following in mind:
 [daviddm-url]: https://david-dm.org/jaumard/trailpack-pdf
 [codeclimate-image]: https://img.shields.io/codeclimate/github/jaumard/trailpack-pdf.svg?style=flat-square
 [codeclimate-url]: https://codeclimate.com/github/jaumard/trailpack-pdf
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/jaumard/trailpack-pdf/badge.svg?style=beer-square)](https://beerpay.io/jaumard/trailpack-pdf)  [![Beerpay](https://beerpay.io/jaumard/trailpack-pdf/make-wish.svg?style=flat-square)](https://beerpay.io/jaumard/trailpack-pdf?focus=wish)
